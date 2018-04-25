@@ -34,7 +34,7 @@ public class StudentDao {
 	public Student getStudentById(Integer id){
 		Student stu= students.get(id);
 		if(stu==null)
-		throw new StudentNotFoundException("Student not found");
+		throw new StudentNotFoundException("Student not found for this id");
 		else
 		return students.get(id);
 	}
